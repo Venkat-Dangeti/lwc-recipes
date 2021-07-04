@@ -4,7 +4,8 @@ import getContactList from '@salesforce/apex/ContactController.getContactList';
 export default class ApexImperativeMethod extends LightningElement {
     contacts;
     error;
-
+    //c/navToRelatedList
+    
     handleLoad() {
         getContactList()
             .then((result) => {
